@@ -1,0 +1,29 @@
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    display: block;
+    padding: 0.25rem;
+    margin: 0rem;
+    width: 600px;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.sidebar {
+    position: relative;
+    min-height: 100vh;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+#sidebar-wrapper{
+    align-items: center;
+    min-height: 100vh;
+    width: 10vw;
+    margin-left: -0.75rem;
+}
