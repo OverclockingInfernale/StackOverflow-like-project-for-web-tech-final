@@ -9,9 +9,12 @@ const CommentItem = (props) => {
     return (
         <div className='post'>
              <Card border='secondary' className='card-post bg-dark text-white ms-2'>
+                    
+                <Card.Header>
+                <Card.Title>{props.com.name}</Card.Title>
+                </Card.Header>
                 <Card.Body>
-                    <Card.Title>{props.com.username}</Card.Title>
-                    <Card.Text>{props.com.text}</Card.Text>
+                    <Card.Text>{props.com.body}</Card.Text>
                     
                 </Card.Body>
                 <Card.Footer>

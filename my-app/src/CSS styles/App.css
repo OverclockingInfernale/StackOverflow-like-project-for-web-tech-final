@@ -27,3 +27,20 @@
     width: 10vw;
     margin-left: -0.75rem;
 }
+
+.page__wrapper{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.side-content{
+    border: orange 2px;
+    border-style: solid;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 125px;
+}

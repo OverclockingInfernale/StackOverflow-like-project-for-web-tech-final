@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const PostSearch = ({filter, setFilter}) => {
     return (
         <div>
-            <Form.Control value={filter.query}
+            <Form.Control className='mt-3' value={filter.query}
             onChange={e => setFilter({...filter, query: e.target.value})}
             placeholder='Search...'
             />

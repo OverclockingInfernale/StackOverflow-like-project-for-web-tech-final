@@ -6,7 +6,7 @@ const CommentList = (props) => {
     return (
         <div>
             {
-                props.post.comments?.map(
+                props.com?.map(
                     (com) =>
                     <CommentItem com = {com} key = {com.id}/>
                     )

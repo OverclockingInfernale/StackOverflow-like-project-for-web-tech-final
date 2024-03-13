@@ -8,8 +8,7 @@ const PostList = ({posts, del, newcom}) => {
         <div>
         {posts.map((post) => 
             <div>
-            <PostItem del = {del} post = {post} newcom = {newcom} key = {post.id}/>
-            <CommentList post = {post}/>
+            <PostItem del = {del} post = {post} key = {post.id}/>
             </div>
             )
         }

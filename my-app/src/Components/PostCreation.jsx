@@ -26,11 +26,11 @@ const PostCreation = ({create}) => {
 
     return (
         <div>
-            <Row>
-                <Col xs lg="4">
-                    <h1 className='header1 m-1'>React related posts</h1>
+            <Row className='mb-2'>
+                <Col>
+                    <h2 className='header1 m-1'>React related posts</h2>
                 </Col>
-                <Col xs lg="2">
+                <Col>
                     <Button variant='outline-warning' className='addButton m-3' onClick={handleShow}>Ask a question</Button>
                 </Col>
             </Row>
