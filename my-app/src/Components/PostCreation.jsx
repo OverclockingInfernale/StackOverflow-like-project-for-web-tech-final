@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 
 const PostCreation = ({create}) => {
    
-    const [post, setPost] = useState({title: '', body: '', comments:[
-           
-        ]
+    const [post, setPost] = useState({title: '', body: ''
     });
     const [showModal, setShowModal] = useState(false);
 

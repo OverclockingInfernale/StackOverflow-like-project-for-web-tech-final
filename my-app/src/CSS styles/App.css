@@ -44,3 +44,13 @@
 .logo{
     width: 125px;
 }
+
+.clickable-title:hover{
+    color: rgb(117, 117, 247);
+    cursor: pointer;
+}
+
+.side-title{
+    background-color: rgb(250, 192, 85);
+    color: #000;
+}

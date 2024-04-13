@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import PostService from '../API/PostService';
 import { useFetching } from '../hooks/useFetching';
-
+import '../CSS styles/App.css';
 
 const PostIdPage = () => {
     const params = useParams()
@@ -28,14 +28,10 @@ const PostIdPage = () => {
 
 
     const [showModal, setShowModal] = useState(false);
-    const [comment, setNewComment] = useState({ username: '', text: '' });
+    const [comment, setNewComment] = useState({ email: '', body: '' });
 
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);
-
-    const handleCommentSubmit = () => {
-       
-    }
 
     const AddNewComment = (e) => {
         e.preventDefault();
@@ -43,13 +39,14 @@ const PostIdPage = () => {
         const newComment = {
             ...comment, id: Date.now()
         }
-        handleCommentSubmit(post.id, newComment);
+
+        setComments([...comments, newComment])
         setNewComment({ username: '', text: '' });
         handleClose();
     }
 
     return (
-        <div className='post'>
+        <div className='post mt-4'>
             <Card border='warning' className='card-post bg-dark text-white'>
                 <Card.Body>
                     <Card.Title>{post.title}</Card.Title>
@@ -75,7 +72,7 @@ const PostIdPage = () => {
                             <Form.Control
                                 className='m-2'
                                 value={comment.username}
-                                onChange={(e) => setNewComment({ ...comment, username: e.target.value })}
+                                onChange={(e) => setNewComment({ ...comment, email: e.target.value })}
                                 type='text'
                                 placeholder='Username'
                             />
@@ -83,7 +80,7 @@ const PostIdPage = () => {
                             <Form.Control
                                 className='m-2'
                                 value={comment.text}
-                                onChange={(e) => setNewComment({ ...comment, text: e.target.value })}
+                                onChange={(e) => setNewComment({ ...comment, body: e.target.value })}
                                 type='text'
                                 placeholder='...'
                             />

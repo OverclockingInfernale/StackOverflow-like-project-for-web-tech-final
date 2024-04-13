@@ -48,13 +48,17 @@ const Posts = () => {
         setPosts(posts.filter(p => p.id !== post.id));
     }
 
+    useObserver(lastElement, page < totalPages, isPostsLoading, () => {
+        setPage(page + 1);
+        console.log(page)
+    })
+
     useEffect(() => {
         fetchPosts(page, limit)
-    }, [])
+    }, [page])
 
     const changePage = (page) => {
         setPage(page)
-        fetchPosts(page, limit)
     }
 
     return (
@@ -67,6 +71,7 @@ const Posts = () => {
                 changePage={changePage}
                 totalPages={totalPages}
             />
+            <div ref={lastElement} className='last-element'></div>
 
         </div>
     )

@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import CommentList from './CommentList';
 import ReactDOM from 'react-dom/client';
-
+import '../CSS styles/App.css';
 
 const PostItem = (props) => {
 
@@ -13,7 +13,7 @@ const PostItem = (props) => {
         <div className='post'>
              <Card border='warning' className='card-post bg-dark text-white'>
                 <Card.Body>
-                    <Card.Title>
+                    <Card.Title className='clickable-title'>
                         <a onClick={() => router(`/posts/${props.post.id}`)}>
                         {props.post.title}
                         </a>

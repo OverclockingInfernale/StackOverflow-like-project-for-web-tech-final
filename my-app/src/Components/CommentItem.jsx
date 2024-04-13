@@ -11,7 +11,7 @@ const CommentItem = (props) => {
              <Card border='secondary' className='card-post bg-dark text-white ms-2'>
                     
                 <Card.Header>
-                <Card.Title>{props.com.name}</Card.Title>
+                <Card.Title>{props.com.email}</Card.Title>
                 </Card.Header>
                 <Card.Body>
                     <Card.Text>{props.com.body}</Card.Text>
