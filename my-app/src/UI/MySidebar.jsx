@@ -5,7 +5,7 @@ const MySidebar = () => {
     return (
         <Sidebar rootStyles={{
             [`.${sidebarClasses.container}`]: {
-              backgroundColor: '#61677A',
+              backgroundColor: '#222831',
             },
           }}>
             <Menu menuItemStyles={{

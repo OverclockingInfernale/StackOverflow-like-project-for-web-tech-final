@@ -10,6 +10,7 @@
     width: 600px;
 }
 
+
 .navbar {
     background-color: #000;
 }
@@ -38,12 +39,22 @@
     border-style: solid;
     margin-top: 1rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0rem;
+    
 }
 
 .logo{
     width: 125px;
 }
+
+.card-text{
+    margin: 0.5rem;
+}
+
+.clickable-title{
+    margin:0.5rem;
+}
+
 
 .clickable-title:hover{
     color: rgb(117, 117, 247);
@@ -53,4 +64,40 @@
 .side-title{
     background-color: rgb(250, 192, 85);
     color: #000;
+}
+
+.material-symbols-outlined{
+    size: rem;
+    margin-left: 0.5rem;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    color:rgb(8, 110, 27)
+}
+
+.expand-less:hover{
+    cursor: pointer;
+    color: rgb(159, 20, 15);
+}
+
+.votes{
+    margin-left: 0.5rem;
+}
+
+.profile-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.card-body{
+    padding: 0;
+    background-color: #222831;
+}
+
+.profile-card{
+    background-color: #000;
+    margin: 1rem;
 }

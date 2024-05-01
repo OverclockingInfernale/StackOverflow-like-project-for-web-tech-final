@@ -53,6 +53,7 @@ const PostCreation = ({create}) => {
                             onChange={(e) => setPost({...post, body: e.target.value})}
                             type='text'
                             placeholder='Enter description'
+                            as='textarea'
                         />
 
                         </Form.Group>

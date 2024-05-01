@@ -49,8 +49,8 @@ const PostIdPage = () => {
         <div className='post mt-4'>
             <Card border='warning' className='card-post bg-dark text-white'>
                 <Card.Body>
-                    <Card.Title>{post.title}</Card.Title>
-                    <Card.Text>{post.body}</Card.Text>
+                    <Card.Title className='card-text'>{post.title}</Card.Title>
+                    <Card.Text className='card-text'>{post.body}</Card.Text>
                 </Card.Body>
                 <Card.Footer>
                     <Button variant='outline-primary' onClick={handleShow}>

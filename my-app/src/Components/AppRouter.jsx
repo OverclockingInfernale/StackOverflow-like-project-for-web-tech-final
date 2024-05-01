@@ -4,6 +4,7 @@ import { privateRoutes, publicRoutes } from "../router";
 
 const AppRouter = () => {
     return (
+        
         <Routes>
             {privateRoutes.map(route =>
                 <Route
