@@ -26,7 +26,7 @@ const PostCreation = ({create}) => {
         <div>
             <Row className='mb-2'>
                 <Col>
-                    <h2 className='header1 m-1'>React related posts</h2>
+                    <h2 className='header1 m-1'>All questions</h2>
                 </Col>
                 <Col>
                     <Button variant='outline-warning' className='addButton m-3' onClick={handleShow}>Ask a question</Button>

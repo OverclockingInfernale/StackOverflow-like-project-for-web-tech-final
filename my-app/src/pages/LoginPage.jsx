@@ -22,7 +22,6 @@ const LoginPage = () => {
         }
 
         dispatch({type: "AUTHORIZE", current: AuthorizedUser})
-        console.log(AuthorizedUser)
         handleClose();
     }
 

@@ -6,7 +6,7 @@ const Pagination = ({ totalPages, page, changePage }) => {
     let pagesArray = getPagesArray(totalPages);
     return (
         <div className="page__wrapper">
-            {pagesArray.map(p =>
+            {/* {pagesArray.map(p =>
                 <Button
                     variant={page === p ? 'primary' : 'outline-primary'}
                     onClick={() => changePage(p)}
@@ -15,7 +15,7 @@ const Pagination = ({ totalPages, page, changePage }) => {
                     {p}
                     
                 </Button>
-            )}
+            )} */}
         </div>
     );
 };

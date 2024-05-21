@@ -1,6 +1,6 @@
 import { Button, Card, Modal, Form } from 'react-bootstrap';
 import React, { useState } from 'react';
-import CommentList from './CommentList';
+import CommentList from '../Components/CommentList';
 import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import PostService from '../API/PostService';

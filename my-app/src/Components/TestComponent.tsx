@@ -5,7 +5,7 @@ interface testProps {
     text?: Text,
 }
 
-const Test = ({number, text}: testProps) => {
+const TestComponent = ({number, text}: testProps) => {
     return (
         <div>
             test value
@@ -13,4 +13,4 @@ const Test = ({number, text}: testProps) => {
     )
 }
 
-export default Test;
+export default TestComponent;

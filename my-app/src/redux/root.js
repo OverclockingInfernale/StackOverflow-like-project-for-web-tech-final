@@ -1,15 +1,17 @@
-import { applyMiddleware, combineReducers, compose, legacy_createStore } from "redux";
+import { combineReducers, compose } from "redux";
+import { configureStore } from '@reduxjs/toolkit';
 import {currentUserReducer} from "./currentUserReducer";
-import {userReducer} from "./userReducer";
+import { userReducer } from "./userReducer";
 
 
 const rootReducer = combineReducers({
     currentUser: currentUserReducer,
-    userList: userReducer,
+    user: userReducer
 })
 
-const enhancers = compose(
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    );
 
-export const store = legacy_createStore(rootReducer, enhancers);
+// const enhancers = compose(
+//     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//     );
+
+export const store = configureStore({reducer: rootReducer, middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat()});

@@ -10,7 +10,8 @@ import MySideContent from './UI/MySideContent';
 import MySidebar from './UI/MySidebar';
 import { AuthContext } from './Context';
 import { Provider } from 'react-redux';
-import {store} from './redux/root.js'
+import {store} from './redux/root.js';
+import TestComponent from './Components/TestComponent.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('main-cont'));
 
@@ -45,6 +46,7 @@ const App = () => {
                     </BrowserRouter>
                 </AuthContext.Provider>
             </Provider>
+            <TestComponent></TestComponent>
         </div>
     );
 }

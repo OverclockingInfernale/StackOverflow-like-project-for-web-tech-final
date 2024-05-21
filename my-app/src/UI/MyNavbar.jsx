@@ -2,7 +2,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from "../static/logo.png"
 import "../CSS styles/App.css";
-import LoginPage from '../Components/LoginPage';
+import LoginPage from '../pages/LoginPage';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../Context';
 

@@ -8,21 +8,18 @@ const defaultState = {
 };
 
 const AUTHORIZE = "AUTHORIZE";
-const FETCH_TASKS = "FETCH_TASKS";
 
 export const currentUserReducer = (state = defaultState, action) => {
     switch (action.type) {
         case AUTHORIZE:
             console.log('authorized');
             return {
-                ...state, 
+                ...state,
                 user: action.current
             }
-        case FETCH_TASKS:
-            
-            
-        default:
+        default: {
             return state;
+        }
     }
-    
+
 }

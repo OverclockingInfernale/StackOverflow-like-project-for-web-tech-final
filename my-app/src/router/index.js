@@ -1,10 +1,10 @@
 import Posts from "../Components/Posts";
 import About from "../Components/About";
-import PostIdPage from "../Components/PostIdPage";
-import HomePage from "../Components/HomePage";
-import BlogPage from "../Components/BlogPage";
-import loginPage from "../Components/LoginPage";
-import ProfilePage from "../Components/ProfilePage";
+import PostIdPage from "../pages/PostIdPage";
+import HomePage from "../pages/HomePage";
+import BlogPage from "../pages/BlogPage";
+import loginPage from "../pages/LoginPage";
+import ProfilePage from "../pages/ProfilePage";
 
 export const privateRoutes = [
     {path: '/about', component: About, exact: true},
