@@ -5,13 +5,15 @@ import './CSS styles/App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { BrowserRouter } from 'react-router-dom';
 import AppRouter from './Components/AppRouter';
-import MyNavbar from './UI/MyNavbar';
-import MySideContent from './UI/MySideContent';
-import MySidebar from './UI/MySidebar';
-import { AuthContext } from './Context';
+import MyNavbar from './UI/MyNavbar.jsx';
+import MySideContent from './UI/MySideContent.jsx';
+import MySidebar from './UI/MySidebar.jsx';
+import { AuthContext } from './Context/index.js';
 import { Provider } from 'react-redux';
 import {store} from './redux/root.js';
 import TestComponent from './Components/TestComponent.tsx';
+import SideContentItem from './typescript/SideContentItem.tsx';
+import SideContent from './typescript/SideContent.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('main-cont'));
 
@@ -40,7 +42,7 @@ const App = () => {
                                 </Container>
                             </Col>
                             <Col>
-                                <MySideContent />
+                                <SideContent/>
                             </Col>
                         </Row>
                     </BrowserRouter>
