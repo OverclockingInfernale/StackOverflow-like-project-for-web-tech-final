@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Form, Button, Modal } from 'react-bootstrap';
 import { AuthContext } from "../Context";
 import { useDispatch } from "react-redux";
+import { UserActionsTypes } from "../redux/userTypes";
 
 const LoginPage = () => {
     const [showModal, setShowModal] = useState(false)
@@ -21,7 +22,7 @@ const LoginPage = () => {
             ...user
         }
 
-        dispatch({type: "AUTHORIZE", current: AuthorizedUser})
+        dispatch({type: UserActionsTypes.AUTHORIZE, payload: AuthorizedUser})
         handleClose();
     }
 
