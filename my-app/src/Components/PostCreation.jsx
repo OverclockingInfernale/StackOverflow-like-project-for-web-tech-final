@@ -1,5 +1,6 @@
 import { Modal, Form, Button, Row, Col } from 'react-bootstrap';
 import React, { useState } from 'react';
+import "../CSS styles/App.css"
 
 const PostCreation = ({create}) => {
    
@@ -29,7 +30,7 @@ const PostCreation = ({create}) => {
                     <h2 className='header1 m-1'>All questions</h2>
                 </Col>
                 <Col>
-                    <Button variant='outline-warning' className='addButton m-3' onClick={handleShow}>Ask a question</Button>
+                    <Button variant='outline-dark' className='addButton m-3' onClick={handleShow}>Ask a question</Button>
                 </Col>
             </Row>
         <Modal show={showModal} onHide={handleClose}>

@@ -20,18 +20,7 @@ const ProfilePage = () => {
                             <p>{user.email}</p>
                         </div>
                     </Card.Body>
-                    <Card.Footer className="card-body text-white">
-                        {/* <ul class="list-group list-group-flush rounded-3 shadow">
-                            <li class="profile-list">
-                                <p class="profile-text">Posts created:</p>
-                            </li>
-                            <li class="profile-list">
-                                <p class="profile-text">Something: </p>
-                            </li>
-                            <li class="profile-list">
-                                <p class="profile-text">Something: </p>
-                            </li>
-                        </ul> */}
+                    <Card.Footer className="card-body">
                     </Card.Footer>
                 </Card>
 

@@ -5,15 +5,15 @@ const MySidebar = () => {
     return (
         <Sidebar rootStyles={{
             [`.${sidebarClasses.container}`]: {
-              backgroundColor: '#222831',
+              backgroundColor: '#90AEAD',
             },
           }}>
             <Menu menuItemStyles={{
                 button: {
                    
                     [`&.active`]: {
-                        backgroundColor: 'black',
-                        color: 'black',   
+                        backgroundColor: 'red',
+                        color: 'red',   
                     },
                 },
             }}>

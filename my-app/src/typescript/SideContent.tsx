@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import SideContentList from "./SideContentList";
 import { sideContentI } from "./model";
 
-const SideContent = () => {
-    const [content, setContent] = useState<sideContentI>([''])
+export default function SideContent() {
+    const [content, setContent] = useState<sideContentI[]>([]);
 
     return(
-        <SideContentList/>
+        <div>
+            <SideContentList/>
+        </div>
     )
 }
 
-export default SideContent;

@@ -28,11 +28,11 @@ const LoginPage = () => {
     function isAuthorized() {
         if (isAuth === true) {
             return (
-                < Link className='btn btn-outline-dark me-2' to="/profile/">{user.nickname}</Link>
+                < Link className='btn btn-outline-light me-2' to="/profile/">{user.nickname}</Link>
             )
         } else {
             return (
-                <Button variant='btn btn-outline-dark' className='button' onClick={handleShow}>Login</Button>
+                <Button variant='btn btn-outline-light' className='button' onClick={handleShow}>Login</Button>
             )
         }
     }

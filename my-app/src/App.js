@@ -10,7 +10,7 @@ import MySideContent from './UI/MySideContent.jsx';
 import MySidebar from './UI/MySidebar.jsx';
 import { AuthContext } from './Context/index.js';
 import { Provider } from 'react-redux';
-import {store} from './redux/root.js';
+import {store} from './redux/root.ts';
 import TestComponent from './Components/TestComponent.tsx';
 import SideContentItem from './typescript/SideContentItem.tsx';
 import SideContent from './typescript/SideContent.tsx';

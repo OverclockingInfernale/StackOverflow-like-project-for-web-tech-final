@@ -10,14 +10,14 @@ const MyNavbar = () => {
 
 
     return (
-        <Navbar id='navbar1' variant='navbar bg-warning navbar-expand-lg sticky-top'>
+        <Navbar id='navbar1' variant='navbar navbar-expand-lg sticky-top'>
             <Container>
                 <Navbar.Brand><img className='logo' src={logo} alt='logo' /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Link className='btn btn-outline-dark me-2' to="">Home</Link>
-                        <Link className='btn btn-outline-dark' to="/posts">Posts</Link>
+                        <Link className='btn btn-outline-light me-2' to="">Home</Link>
+                        <Link className='btn btn-outline-light' to="/posts">Posts</Link>
                     </Nav>
                     <Nav className='ms-auto'>
                        <LoginPage/>

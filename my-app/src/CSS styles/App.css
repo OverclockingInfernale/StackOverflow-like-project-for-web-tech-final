@@ -1,18 +1,26 @@
-#root{
+#root {
     display: flex;
     justify-content: center;
 }
 
-.post{
+.post {
     display: block;
     padding: 0.25rem;
     margin: 0rem;
     width: 600px;
 }
 
+.header1 {
+    color: #000;
+}
+
+.side-link {
+    color: #000;
+}
+
 
 .navbar {
-    background-color: #000;
+    background-color: #244855;
 }
 
 .sidebar {
@@ -22,66 +30,76 @@
     align-items: center;
 }
 
-#sidebar-wrapper{
+#sidebar-wrapper {
     align-items: center;
     min-height: 100vh;
     width: 10vw;
     margin-left: -0.75rem;
 }
 
-.page__wrapper{
+.page__wrapper {
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
+}
 
-.side-content{
-    border: orange 2px;
+.side-content {
+    border: #90AEAD 2px;
     border-style: solid;
     margin-top: 1rem;
     text-align: center;
     padding: 0rem;
-    
+    background-color: #adbbbb;
+
 }
 
-.logo{
+.logo {
     width: 125px;
 }
 
-.card-text{
+.card-text {
     margin: 0.5rem;
 }
 
-.clickable-title{
-    margin:0.5rem;
+.card-title {
+    margin: 0;
+    font-weight: 600;
+}
+
+.clickable-title {
+    margin: 0.5rem;
+    font-style: unset;
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
 }
 
 
-.clickable-title:hover{
+.clickable-title:hover {
     color: rgb(117, 117, 247);
     cursor: pointer;
 }
 
-.side-title{
-    background-color: rgb(250, 192, 85);
+.side-title {
+    background-color: #90AEAD;
     color: #000;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
     size: rem;
     margin-left: 0.5rem;
 }
 
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover {
     cursor: pointer;
-    color:rgb(8, 110, 27)
+    color: rgb(8, 110, 27)
 }
 
-.expand-less:hover{
+.expand-less:hover {
     cursor: pointer;
     color: rgb(159, 20, 15);
 }
 
-.votes{
+.votes {
     margin-left: 0.5rem;
 }
 
@@ -92,12 +110,28 @@
     padding: 0.5rem;
 }
 
-.card-body{
-    padding: 0;
-    background-color: #222831;
+.card-body {
+    padding: 0.5rem;
+    background-color: #ffffff;
 }
 
-.profile-card{
+/* @keyframes flash {
+    from {
+        background-color: yellow;
+    }
+} */
+
+.card-post {
+    padding: 0rem;
+    margin: 1rem;
+    background-color: #ffffff;
+    animation-name: flash;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.profile-card {
     background-color: #000;
     margin: 1rem;
 }

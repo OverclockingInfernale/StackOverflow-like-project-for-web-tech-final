@@ -1,12 +1,15 @@
 export enum SideContentActionTypes {
     FETCH_POSTS = 'FETCH_POSTS',
     FETCH_POSTS_ERROR = 'FETCH_POSTS_ERROR',
-    FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS'
+    FETCH_POSTS_SUCCESS = 'FETCH_POSTS_SUCCESS',
+    SET_PAGE = 'SET_PAGE'
 }
 
 export interface SideContentState {
     sidePosts: any[],
-    error: null | string
+    error: null | string,
+    page: number,
+    limit: number
 }
 
 
@@ -25,4 +28,9 @@ interface FetchErrorSideContentAction {
     payload?: any
 }
 
-export type SideContentAction = FetchSideContentAction | FetchErrorSideContentAction | FetchSuccessSideContentAction;
+interface SetPageAction{
+    type: SideContentActionTypes.SET_PAGE,
+    payload?: any
+}
+
+export type SideContentAction = FetchSideContentAction | FetchErrorSideContentAction | FetchSuccessSideContentAction | SetPageAction;

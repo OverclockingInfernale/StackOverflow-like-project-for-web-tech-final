@@ -47,9 +47,9 @@ const PostIdPage = () => {
 
     return (
         <div className='post mt-4'>
-            <Card border='warning' className='card-post bg-dark text-white'>
+            <Card border='warning' className='card-post'>
                 <Card.Body>
-                    <Card.Title className='card-text'>{post.title}</Card.Title>
+                    <Card.Title className='card-title'>{post.title}</Card.Title>
                     <Card.Text className='card-text'>{post.body}</Card.Text>
                 </Card.Body>
                 <Card.Footer>

@@ -1,12 +1,12 @@
 import { combineReducers, compose } from "redux";
 import { configureStore } from '@reduxjs/toolkit';
-import {currentUserReducer} from "./currentUserReducer";
-// import { sideContentReducer } from "./ContentReducer";
+// import {currentUserReducer} from "./currentUserReducer.js";
+import { sideContentReducer } from "./ContentReducer";
 
 
 export const rootReducer = combineReducers({
-    currentUser: currentUserReducer,
-    // sideContent: sideContentReducer
+    // currentUser: currentUserReducer,
+    sideContent: sideContentReducer
 })
 
 export type rootState = ReturnType<typeof rootReducer>

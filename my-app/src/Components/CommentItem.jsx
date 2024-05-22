@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import "../CSS styles/App.css";
 
 
 const CommentItem = (props) => {
     const [solution, setSolution] = useState(true);
     const markAsSolution = () => setSolution(false);
+    const ref = useRef();
+
+    useEffect(() => {
+        if (ref.current) {
+            setTimeout(() => ref.current.scrollIntoView({ inline: "center", }), 777);
+        }
+    }, []);
 
     return (
-        <div className='post'>
-             <Card border='secondary' className='card-post bg-dark text-white ms-2'>
+        <div className='card-post' ref={ref}>
+             <Card border='secondary' className='card-post ms-2'>
                     
                 <Card.Header>
-                <Card.Title>{props.com.email}</Card.Title>
+                <Card.Title className='card-title'>{props.com.email}</Card.Title>
                 </Card.Header>
                 <Card.Body>
                     <Card.Text>{props.com.body}</Card.Text>
